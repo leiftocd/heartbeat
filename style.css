@@ -1,123 +1,124 @@
-.heart {
-    background-color: crimson;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* menu header ------------------------------------------------------------------- */
+#header{
+    height: 50px;
+    background-color: rgba(8, 8, 130, 0.905);
+    text-align: center;
+    z-index: 1;   
+}
+#nav li{
     position: relative;
-    top: 0;
-    transform: rotate(-45deg);
-    position: absolute;
-    left: 45%; 
-    top: 45%;
-    animation: heartbeat 1.25s infinite;
-  }
-  .heart::before,
-  .heart::after {
-    content: "";
-    background-color: crimson;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    position: absolute;
-    animation: pulsecolor 1.25s infinite;
-  }
-  .heart::before {
-    top: -100px;
-    left: 0;
-  }
-  
-  .heart::after {
-    top: 0;
-    left: 100px;
-  }
-  .right-eye {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    z-index: 1;
-    border-radius: 50%;
-    background-color: #000000;
-    right: 60px;
-    top: -10x;
-    animation: blink 1s infinite;
-    .right-eye::before {
-    top: -50px;
-    right: 0;
-  }
-  .right-eye::after {
-    top: 0;
-    right: 50px;
-  }
-   span {
-        position: absolute;
-        transition: all 0.3s;
-        width: 10px;
-        height: 10px;
-        margin-left: 5px;
-        margin-top: 5px;
-        background: #000;
-        border-radius: 50%;
-      }
-  }
-  .left-eye {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    z-index: 1;
-    border-radius: 50%;
-    background-color: #000000;
-    left: 175px;
-    bottom: 137px;
-    animation: blink 1s infinite;
-  }
-  .left-eye::before {
-    top: -50px;
-    right: 0;
-  }
-  .left-eye::after {
-    top: 0;
-    right: 50px;
-  }
-  .mouth {
-    position: absolute;
-    height: 10px;
-    width: 65px;
-    border-radius: 50%;
-    background-color: #000000; 
-    align-item: center;
-    bottom: 70%;
-    left: 50%;
-    z-index: 2;
-    transform: rotate(45deg);
-  }
-  @keyframes heartbeat {
-      0% {
-      transform: scale(1)
-                 rotate(-45deg);
-        }
-      10% {
-      transform: scale(1.25)
-                 rotate(-45deg);
-      background-color: #ef3953;
-        }
-    100% {
-        transform: scale(1)
-                   rotate(-45deg);
-    }
-  }
-  
-  @keyframes pulsecolor {
-    10% {
-    background-color: #ef3953;
-    }
-  }
-  
-  @keyframes blink {
-   0%, 100% {
-          transform: scale(1, .05);
-      }
-      5%,
-      95% {
-          transform: scale(1, 1);
-      }
-  }
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 48px;
+    padding: 0 12px;
+}
+#nav > li{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+#nav > li:hover{
+    color: #000;
+    background-color: rgba(35, 69, 243, 0.826);
+}
+
+#nav > li > a {
+    list-style-type: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* end menu  */
+#form{
+    height: 600px;
+    width: 500px;
+    background-color: antiquewhite;
+    margin-left: 33%;
+    margin-top: 20px;
+}
+#form-css{
+    margin: 16px 12px;
+}
+#form >h2{
+    height: 40px;
+    background-color: rgba(5, 136, 237, 0.959);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#code{
+width: 100%;
+height: 30px;
+border-radius: 8px;
+}
+#name{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+}
+#email{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+}
+#quoctich{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+}
+
+#note{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+.btn-dangky{
+    width: 100%;
+    height: 32px;
+    background-color: rgba(3, 246, 214, 0.718);
+    border: none;
+    color: #000;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/* start album------------ */
+#product{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+}
+#product .product-list {
+    padding: 12px 70px;
+    
+}
+#product .product-item{
+    float: left;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 4px solid #f63;
+    margin: 24px;
+}
+#product .product-name {
+    font-size: 15px;  
+}
+#product .product-img {
+    margin-top: 15px;
+    width: 160px;
+    border-radius: 4px;
+} 
+/* end album---------- */
